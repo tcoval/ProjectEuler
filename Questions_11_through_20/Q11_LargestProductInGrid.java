@@ -13,8 +13,8 @@ package ProjectEuler.Questions_11_through_20;
 
 public class Q11_LargestProductInGrid {
 
-	public static final int DIST = 4;
-	public static final int[][] GRID = 
+	private static final int DIST = 4;
+	private static final int[][] GRID = 
 			{{8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8},
 			{49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0},
 			{81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30, 3, 49, 13, 36, 65},

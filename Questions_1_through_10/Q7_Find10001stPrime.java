@@ -12,7 +12,7 @@ package ProjectEuler.Questions_1_through_10;
 
 public class Q7_Find10001stPrime {
 
-	public static final int MAX = 10001;
+	private static final int MAX = 10001;
 	
 	public static void main(String[] args) {
 		

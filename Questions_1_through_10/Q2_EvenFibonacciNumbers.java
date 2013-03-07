@@ -16,8 +16,8 @@ import java.util.Map;
 
 public class Q2_EvenFibonacciNumbers {
 	
-	public static Map<Integer, Integer> map;
-	public static final int MAX = 4000000;
+	private static Map<Integer, Integer> map;
+	private static final int MAX = 4000000;
 	
 	public static void main(String[] args) {
 		map = new HashMap<Integer, Integer>();
@@ -30,7 +30,7 @@ public class Q2_EvenFibonacciNumbers {
 		System.out.println("Sum: " + sum);
 	}
 	
-	public static int fibo(int n) {
+	private static int fibo(int n) {
 		if (map.containsKey(n)) {
 			return map.get(n);
 		} else if (n < 2) {

@@ -11,14 +11,14 @@ package ProjectEuler.Questions_1_through_10;
 
 public class Q3_LargestPrimeFactor {
 	
-	public static final long MAX = 600851475143L;
+	private static final long MAX = 600851475143L;
 	
 	public static void main(String[] args) {
 		long prime = findLargestPrime(MAX);
 		System.out.println("Largest Prime: " + prime);
 	}
 	
-	public static Long findLargestPrime(long n) {
+	private static Long findLargestPrime(long n) {
 		for (long l = 2; l <= (long) Math.round(Math.sqrt(n)); l++) {	//Iterate up to the sqrt of n
 			if (n % l == 0) {
 				return findLargestPrime(n/l);	// Pulls out the smallest divisor of n

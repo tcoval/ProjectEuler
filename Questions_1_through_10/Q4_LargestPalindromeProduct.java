@@ -12,8 +12,8 @@ package ProjectEuler.Questions_1_through_10;
 
 public class Q4_LargestPalindromeProduct {
 
-	public static final int MIN = 100;
-	public static final int MAX = 1000;
+	private static final int MIN = 100;
+	private static final int MAX = 1000;
 	
 	public static void main(String[] args) {
 		int largestPalindrome = 0;
@@ -28,7 +28,7 @@ public class Q4_LargestPalindromeProduct {
 		System.out.println("Largest Palindrome: " + largestPalindrome);
 	}
 	
-	public static int createReverse(int n) {
+	private static int createReverse(int n) {
 		int reverse = 0;
 		while (n != 0) {
 			reverse *= 10;

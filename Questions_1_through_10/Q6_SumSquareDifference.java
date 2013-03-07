@@ -19,7 +19,7 @@ package ProjectEuler.Questions_1_through_10;
 
 public class Q6_SumSquareDifference {
 
-	public static final int MAX = 100;
+	private static final int MAX = 100;
 	
 	public static void main(String[] args) {
 		int sumOfSquares = getSumOfSquares(MAX);
@@ -28,7 +28,7 @@ public class Q6_SumSquareDifference {
 		System.out.println("Sum Square Difference: " + difference);
 	}
 	
-	public static int getSumOfSquares(int n) {
+	private static int getSumOfSquares(int n) {
 		int[] sumOfSquares = new int[MAX];
 		sumOfSquares[0] = 1;
 		for (int i = 2; i <= MAX; i++) {
@@ -37,7 +37,7 @@ public class Q6_SumSquareDifference {
 		return sumOfSquares[MAX-1];
 	}
 	
-	public static int getSquareOfSums(int n) {
+	private static int getSquareOfSums(int n) {
 		int sum = 0;
 		for (int i = 1; i <= n; i++) {
 			sum += i;

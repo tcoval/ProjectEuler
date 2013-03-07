@@ -13,7 +13,7 @@ package ProjectEuler.Questions_1_through_10;
 
 public class Q5_SmallestMultiple {
 
-	public static final int MAX = 20;
+	private static final int MAX = 20;
 	
 	public static void main(String[] args) {
 		boolean divisible = false;

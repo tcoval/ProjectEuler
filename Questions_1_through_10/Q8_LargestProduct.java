@@ -12,8 +12,8 @@ package ProjectEuler.Questions_1_through_10;
 
 public class Q8_LargestProduct {
 
-	public static final int CONSECUTIVE = 5;
-	public static final String NUMBER = 
+	private static final int CONSECUTIVE = 5;
+	private static final String NUMBER = 
 			"73167176531330624919225119674426574742355349194934" +
 			"96983520312774506326239578318016984801869478851843" +
 			"85861560789112949495459501737958331952853208805511" +
@@ -50,7 +50,7 @@ public class Q8_LargestProduct {
 		System.out.println("Max Product: " + maxProduct);
 	}
 	
-	public static int[] convertToIntArray(String number) {
+	private static int[] convertToIntArray(String number) {
 		int[] digits = new int[number.length()];
 		char[] temp = number.toCharArray();
 		for (int i = 0; i < temp.length; i++) {
