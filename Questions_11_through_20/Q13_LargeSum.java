@@ -3,7 +3,7 @@ package ProjectEuler.Questions_11_through_20;
 /*
  * Question #13
  * 
- * Question: WOrk out the first ten digits of the sum of the 
+ * Question: Work out the first ten digits of the sum of the 
  * following one-hundred 50-digit numbers.
  * Answer: 5537376230
  */
