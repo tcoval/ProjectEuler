@@ -16,20 +16,20 @@ import java.util.Set;
 
 public class Q1_MultiplesOf3And5 {
 
+	private static final int MAX = 1000;
+	private static final int[] multipliers = {3,5};
+	
 	public static void main(String[] args) {
 		Set<Integer> multiples = new HashSet<Integer>();
-		int sum = 0;
-		//Search through multiples of 3 and add them to the set
-		for (int i = 3; i < 1000; i += 3) {
-			multiples.add(i);
-		}
-		//Search through multiples of 5 and add them to the set 
-		//if they are not already in the set
-		for (int i = 5; i < 1000; i += 5) {
-			if (!multiples.contains(i)) {
-				multiples.add(i);
+		for (int index = 0; index < multipliers.length; index++) {
+			int n = multipliers[index];
+			for (int i = n; i < MAX; i += n) {
+				if (!multiples.contains(i)) {
+					multiples.add(i);
+				}
 			}
 		}
+		int sum = 0;
 		Iterator<Integer> iter = multiples.iterator();
 		while (iter.hasNext()) {
 			sum += iter.next();
