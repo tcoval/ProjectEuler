@@ -1,5 +1,7 @@
 package ProjectEuler.Questions_11_through_20;
 
+import java.math.BigInteger;
+
 /*
  * Question #15
  * 
@@ -10,8 +12,9 @@ package ProjectEuler.Questions_11_through_20;
  * Question: How many such routes are there through a 20x20 grid?
  * Answer: 137846528820
  * 
- * Note: I went with this more complicated solution because of its scalability.
- * It can quickly calculate the number of paths up until the java long primitive
+ * Note: I went with this more complicated solution because of its scalability and
+ * also the fact that the long value overflows and I didn't want to use the BigInteger 
+ * class. It can quickly calculate the number of paths up until the java long primitive
  * overflows.
  */
 
