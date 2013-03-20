@@ -1,7 +1,5 @@
 package ProjectEuler.Questions_11_through_20;
 
-import java.math.BigInteger;
-
 /*
  * Question #15
  * 
