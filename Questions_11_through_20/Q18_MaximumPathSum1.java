@@ -1,6 +1,8 @@
 package ProjectEuler.Questions_11_through_20;
 
 /*
+ * Question #18
+ * 
  * By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.
  * 
  * 		   3
