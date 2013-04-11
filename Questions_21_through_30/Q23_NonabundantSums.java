@@ -1,6 +1,7 @@
 package ProjectEuler.Questions_21_through_30;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /*
  * Question #23
@@ -21,15 +22,53 @@ import java.util.ArrayList;
  * 
  * Question: Find the sum of all the positive integers which cannot be written as the sum 
  * of two abundant numbers.
- * Answer:
+ * Answer: 4179871
  */
 
 public class Q23_NonabundantSums {
 
-	private static ArrayList<Integer> abundantNumbers;
+	private static final int MAX = 28123;
 	
 	public static void main(String[] args) {
-		abundantNumbers = new ArrayList<Integer>();
-		for (int i )
+		List<Integer> abundantNumbers = findAbundantNumbers();
+		boolean[] possibleSums = new boolean[28123];
+		
+		for (int num1 : abundantNumbers) {
+			for (int num2 : abundantNumbers) {
+				int sum = num1 + num2;
+				if (sum <= MAX) {
+					possibleSums[sum - 1] = true;
+				}
+			}
+		}
+		int sum = 0;
+		for (int i = 0; i < possibleSums.length; i++) {
+			if (!possibleSums[i]) {
+				sum += i + 1;
+			}
+		}
+		System.out.println("Sum of non-abundant sums: " + sum);
+		
+	}
+	
+	private static List<Integer> findAbundantNumbers() {
+		List<Integer> abundantNumbers = new ArrayList<Integer>();
+		for (int i = 1; i < MAX; i++) {
+			int sum = getSumOfFactors(i);
+			if (sum > i) {
+				abundantNumbers.add(i);
+			}
+		}
+		return abundantNumbers;
+	}
+	
+	private static int getSumOfFactors(int n) {
+		int sum = 0;
+		for (int i = 1; i <= n/2; i++) {
+			if (n % i == 0) {
+				sum += i;
+			}
+		}
+		return sum;
 	}
 }
