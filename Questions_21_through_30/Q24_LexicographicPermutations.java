@@ -17,7 +17,7 @@ import java.util.List;
  * Answer: 2783915460
  */
 
-public class Q24_LexicogrphicPermutations {
+public class Q24_LexicographicPermutations {
 
 	public static List<Integer> digits;
 	public static int placement = 1000000;
