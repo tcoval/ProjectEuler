@@ -12,7 +12,7 @@ import java.util.Arrays;
  * There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97.
  * 
  * Question: How many circular primes are there below one million?
- * Answer: 
+ * Answer: 55
  */
 
 public class Q35_CircularPrimes {
